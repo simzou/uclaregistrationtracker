@@ -2,22 +2,41 @@
 import urllib
 from datetime import datetime
 
-MATH_URL = "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=MATH"
-CS_URL = "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=COM+SCI"
+subjects = {
+	"polsci" : {
+		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=POL+SCI"
+	},
+	"math": {
+		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=MATH"
+	},
+	"comsci": {
+		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=COM+SCI"
+	},
+	"econ": {
+		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=ECON"
+	},
+	"lifesci": {
+		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=LIFESCI"
+	},
+	"mgmt": {
+		"url": "http://www.registrar.ucla.edu/schedule/crsredir.aspx?termsel=14F&subareasel=MGMT"
+	},
+	"chem": {
+		"url": "http://www.registrar.ucla.edu/schedule/crsredir.aspx?termsel=14F&subareasel=CHEM"
+	},
+	"physics": {
+		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=PHYSICS"
+	},
+	"engl": {
+		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=ENGL"
+	}
+}
 
 now = datetime.now().isoformat()[0:16] # cuts off milliseconds
-cs_filename = "comsci_" + now + ".html"
-math_filename = "math_" + now + ".html"
-urllib.urlretrieve(MATH_URL, math_filename)
-urllib.urlretrieve(CS_URL, cs_filename)
 
-
-
-
-
-
-
-
+for key, value in subjects.iteritems():
+	filename = key + "_" + now + ".html"
+	urllib.urlretrieve(value["url"], filename)
 
 
 
