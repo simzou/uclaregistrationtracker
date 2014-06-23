@@ -29,6 +29,9 @@ subjects = {
 	},
 	"engl": {
 		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=ENGL"
+	},
+	"elengr": {
+		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=EL+ENGR"
 	}
 }
 
