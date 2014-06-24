@@ -32,6 +32,12 @@ subjects = {
 	},
 	"elengr": {
 		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=EL+ENGR"
+	},
+	"psych": {
+		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=PSYCH"
+	},
+	"pic": {
+		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=COMPTNG"
 	}
 }
 
