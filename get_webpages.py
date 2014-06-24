@@ -38,6 +38,9 @@ subjects = {
 	},
 	"pic": {
 		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=COMPTNG"
+	},
+	"ling": {
+		"url": "http://www.registrar.ucla.edu/schedule/detmain.aspx?termsel=14F&subareasel=LING"
 	}
 }
 
